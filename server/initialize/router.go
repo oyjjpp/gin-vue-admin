@@ -5,13 +5,13 @@ import (
 	"gin-vue-admin/global"
 	"gin-vue-admin/middleware"
 	"gin-vue-admin/router"
+
 	"github.com/gin-gonic/gin"
-	"github.com/swaggo/gin-swagger"
+	ginSwagger "github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
 
 // 初始化总路由
-
 func Routers() *gin.Engine {
 	var Router = gin.Default()
 	// Router.Use(middleware.LoadTls())  // 打开就能玩https了
